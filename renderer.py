@@ -56,8 +56,12 @@ class Renderer:
     
     tileset_image = self.render_tileset_by_assets(gfx_data, palettes, tileset_datas, layer_index)
     
-    #if tileset_image is not None:
-    #  tileset_image.save("../tileset_renders/area%02X-layer%02X-gfxindex%02X-tileset.png" % (area.area_index, layer_index, gfx_index))
+    #
+    #Uncomment these 2 lines to output the tileset to the ..\GitHub Dir
+    #
+    
+    #if tileset_image:
+    #  tileset_image.save("../area%02X-layer%02X-gfxindex%02X-tileset.png" % (area.area_index, layer_index, gfx_index))
     
     return tileset_image
   
